@@ -7,39 +7,39 @@ If you attempt to create new vue project, then create by Vue CLI. [link]
 ### 2. Introduction:
 Vue is a framework to build front-end application and perfectly capable of Single Page Application.
 - Versions of vue:
-•	Old version: 1x
-•	Stable version: 2.6.12
-•	Beta new version: 3x
+    *	Old version: 1x
+    *	Stable version: 2.6.12
+    *	Beta new version: 3x
 You can find source code on github. [link]
 - A component include 3 HTML tags: 
-•	<template>: write HTML code here to create template.
-•	<script>: write js code here follow vue construction.
-•	<style>: write css code here, we have some options like scss, sass, css with scoped or not.
+    *	<template>: write HTML code here to create template.
+    *	<script>: write js code here follow vue construction.
+    *	<style>: write css code here, we have some options like scss, sass, css with scoped or not.
 You can split a component into 3 independent files (html, js, css) then import together in another file.
 - Important options/ data inside a component:
-•	name: specify name of component.
-•	components: include name of other vue components will be used in the current component. [link]
-•	props: include name of parent’s data is pass through v-bind or attribute to use it in the child component.
-•	mixins: extend of component, can include data, methods, computed, etc. [link]
-•	data declare:
-◦	data (object type): declare global variables, can use in entire project.
-◦	data() (function type): declare local variables, can access only by current component and child (through props).
-•	computed: a simple operation functions without parameter to solve simple statement.
-•	methods: write custom functions as you want.
-•	watch: to track data changing with output is old and new variable. 
+    *	name: specify name of component.
+    *	components: include name of other vue components will be used in the current component. [link]
+    *	props: include name of parent’s data is pass through v-bind or attribute to use it in the child component.
+    *	mixins: extend of component, can include data, methods, computed, etc. [link]
+    *	data declare:
+        *	data (object type): declare global variables, can use in entire project.
+        *	data() (function type): declare local variables, can access only by current component and child (through props).
+    *	computed: a simple operation functions without parameter to solve simple statement.
+    *	methods: write custom functions as you want.
+    *	watch: to track data changing with output is old and new variable. 
 
 ### 3. Template syntax:
 - Data binding and directive:
-•	mustache: <p>{{ variable }}</p> to render data of variable, variable can also be computed, methods, statement or ternary expressions. [link]
-•	v-html: <span v-html=”variable”></span> will replace content of <span> with the variable’s value (not recommended). [link]
-•	v-bind: <div v-bind:id=”randomID”></div> to bind value inside of HTML or component tag. [link]
-•	v-model: create two-way binding on a form input element or a component. [link]
-•	v-on: <button v-on:click=”doSomething()”></button> to handle action on click event. [link]
-•	Other directive: v-if, v-for, v-show, etc. [link]
+    *	mustache: <p>{{ variable }}</p> to render data of variable, variable can also be computed, methods, statement or ternary expressions. [link]
+    *	v-html: <span v-html=”variable”></span> will replace content of <span> with the variable’s value (not recommended). [link]
+    *	v-bind: <div v-bind:id=”randomID”></div> to bind value inside of HTML or component tag. [link]
+    *	v-model: create two-way binding on a form input element or a component. [link]
+    *	v-on: <button v-on:click=”doSomething()”></button> to handle action on click event. [link]
+    *	Other directive: v-if, v-for, v-show, etc. [link]
 - Shorthand: we can use “:” instead of v-bind and “@” instead of v-on. [link]
 - Life cycle hook: 
-•	Built-in function let you call actions in specific life cycle of component. [link]
-•	Diagram: [link]
+    *	Built-in function let you call actions in specific life cycle of component. [link]
+    *	Diagram: [link]
 
 ### 4. Computed:
 - Computed is a simplest function without parameter to solve one statement as short as possible. Instead of write a statement inside “mustache” , we can use computed to reuse function and make our code cleaner. [link]

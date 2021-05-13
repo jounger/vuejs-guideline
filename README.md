@@ -12,9 +12,9 @@ Vue is a framework to build front-end application and perfectly capable of Singl
     *	Beta new version: 3x
 You can find source code on github. [link]
 * A component include 3 HTML tags: 
-    *	<template></template>: write HTML code here to create template.
-    *	<script></script>: write js code here follow vue construction.
-    *	<style></style>: write css code here, we have some options like scss, sass, css with scoped or not.
+    *	`<template></template>`: write HTML code here to create template.
+    *	`<script></script>`: write js code here follow vue construction.
+    *	`<style></style>`: write css code here, we have some options like scss, sass, css with scoped or not.
 You can split a component into 3 independent files (html, js, css) then import together in another file.
 * Important options/ data inside a component:
     *	name: specify name of component.
@@ -30,13 +30,13 @@ You can split a component into 3 independent files (html, js, css) then import t
 
 ### 3. Template syntax:
 * Data binding and directive:
-    *	mustache: <p>{{ variable }}</p> to render data of variable, variable can also be computed, methods, statement or ternary expressions. [link]
-    *	v-html: <span v-html="variable"></span> will replace content of <span></span> with the variable’s value (not recommended). [link]
-    *	v-bind: <div v-bind:id="randomID"></div> to bind value inside of HTML or component tag. [link]
+    *	mustache: `<p>{{ variable }}</p>` to render data of variable, variable can also be computed, methods, statement or ternary expressions. [link]
+    *	v-html: `<span v-html="variable"></span>` will replace content of `<span></span>` with the variable’s value (not recommended). [link]
+    *	v-bind: `<div v-bind:id="randomID"></div>` to bind value inside of HTML or component tag. [link]
     *	v-model: create two-way binding on a form input element or a component. [link]
-    *	v-on: <button v-on:click="doSomething()"></button> to handle action on click event. [link]
+    *	v-on: `<button v-on:click="doSomething()"></button>` to handle action on click event. [link]
     *	Other directive: v-if, v-for, v-show, etc. [link]
-* Shorthand: we can use ":" instead of v-bind and "@" instead of v-on. [link]
+* Shorthand: we can use `:` instead of v-bind and `@` instead of v-on. [link]
 * Life cycle hook: 
     *	Built-in function let you call actions in specific life cycle of component. [link]
     *	Diagram: [link]
